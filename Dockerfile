@@ -9,7 +9,7 @@ COPY requirements.txt requirements.txt
 
 RUN apt-get update && apt-get install -y libldap2-dev libsasl2-dev
 RUN pip install flask-simpleldap
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install Flask-HTTPAuth
 RUN pip3 install http-basic-auth
 
